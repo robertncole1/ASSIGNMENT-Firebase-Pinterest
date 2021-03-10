@@ -8,6 +8,8 @@ const showPins = (array) => {
     <img class="card-img-top" src=${item.imgUrl} alt=${item.pinTitle}>
     <div class="card-body">
     <p class="card-text bold">${item.pinDescription}</p>
+    <button class="btn btn-info" data-toggle="modal" data-target="#formModal" id="edit-pin-btn--${item.firebaseKey}">Edit Pin</button>
+      <button class="btn btn-danger" id="delete-pin--${item.firebaseKey}">Delete Pin</button>
     </div>
   </div>`;
   });

@@ -1,6 +1,6 @@
 const navBar = () => {
   document.querySelector('#navigation').innerHTML = `<nav class="navbar fixed-top navbar-expand-lg navbar-light mb-4">
-  <a class="navbar-brand title" href="#"><img src="https://i.pinimg.com/474x/13/bc/eb/13bceb594ac9faf0ecd37638c81ffea7.jpg" alt="Pinterest Logo" width="50";></a>
+  <a class="navbar-brand title" id="board-home" href="#"><img src="https://i.pinimg.com/474x/13/bc/eb/13bceb594ac9faf0ecd37638c81ffea7.jpg" alt="Pinterest Logo" width="50";></a>
   <button
     class="navbar-toggler"
     type="button"
