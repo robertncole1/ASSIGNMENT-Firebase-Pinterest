@@ -3,8 +3,7 @@ const domBuilder = () => {
   <div id="title-area"></div>
   <div id="add-button"></div>
   <div id="form-container"></div>
-  <div id="main-container">
-  </div>`;
+  <div id="main-container"></div>`;
 
   document.querySelector('#title-area').innerHTML += '<h3>Welcome To Pinterest</h3>';
 };
