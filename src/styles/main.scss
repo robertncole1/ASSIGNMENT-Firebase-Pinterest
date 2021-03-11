@@ -24,6 +24,21 @@ body {
   justify-content: center;
 }
 
+#form-container {
+  width: 60%;
+  margin: auto;
+  justify-content: center;
+
+  #formModal {
+    color: black;
+  }
+}
+
 #title-area {
   text-align: center;
+}
+
+#add-button {
+  text-align: center;
+  margin-top: 20px;
 }

@@ -2,7 +2,8 @@ const showPins = (array) => {
   // CREATE A BUTTON TO ADD AUTHORS
   document.querySelector('#title-area').innerHTML = '';
   document.querySelector('#main-container').innerHTML = '';
-
+  document.querySelector('#add-button').innerHTML = '<button class="btn btn-danger btn-lg mb-4" id="add-pin-btn">Add A Pin</button>';
+  document.querySelector('#form-container').innerHTML = '';
   array.forEach((item) => {
     document.querySelector('#main-container').innerHTML += `<div class="card"><h5 class="card-title">${item.pinTitle}</h5>
     <img class="card-img-top" src=${item.imgUrl} alt=${item.pinTitle}>
