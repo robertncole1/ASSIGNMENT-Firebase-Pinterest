@@ -26,10 +26,12 @@ const getSinglePin = (firebaseKey) => new Promise((resolve, reject) => {
 });
 
 // DELETE PIN
-const deletePin = (firebaseKey, uid) => new Promise((resolve, reject) => {
-  axios.delete(`${dbUrl}/pins/${firebaseKey}.json`)
-    .then(() => getBoardPins(uid).then((pinsArray) => resolve(pinsArray)))
-    .catch((error) => reject(error));
+const deletePin = (firebaseKey) => new Promise((resolve, reject) => {
+  getSinglePin(firebaseKey).then((pinInfo) => {
+    axios.delete(`${dbUrl}/pins/${firebaseKey}.json`)
+      .then(() => getBoardPins(pinInfo.boardId).then((pinsArray) => resolve(pinsArray)))
+      .catch((error) => reject(error));
+  });
 });
 
 // CREATE PIN

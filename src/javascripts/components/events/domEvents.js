@@ -33,9 +33,10 @@ const domEvents = (uid) => {
 
     // DELETE PIN
     if (e.target.id.includes('delete-pin')) {
+      e.preventDefault();
       if (window.confirm('Want to delete?')) {
         const firebaseKey = e.target.id.split('--')[1];
-        deletePin(firebaseKey, uid).then((pinsArray) => showPins(pinsArray));
+        deletePin(firebaseKey, uid).then((pinArray) => showPins(pinArray));
       }
     }
 

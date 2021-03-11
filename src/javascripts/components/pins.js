@@ -1,5 +1,4 @@
 const showPins = (array) => {
-  // CREATE A BUTTON TO ADD AUTHORS
   document.querySelector('#title-area').innerHTML = '';
   document.querySelector('#main-container').innerHTML = '';
   document.querySelector('#add-button').innerHTML = '<button class="btn btn-danger btn-lg mb-4" id="add-pin-btn">Add A Pin</button>';
