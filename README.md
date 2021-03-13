@@ -1,55 +1,25 @@
 # Pinterest
 
-Your team has been tasked with creating pinterest.  If you live under a rock and have never used pinterest before go figure out what it does. TLDR; users create boards and can pin urls to the boards
+## Overview
+This app gives the user the ability to create boards and pins of whatever interests them. Also gives them the ability to delete their boards and pins and manage the board their pins belong to.
 
-## Requirements
-* Clean code - single responsibility principle
-* ES6 Modules bundled with webpack
-* No errors - linters should be clean
-* SASS and Bootstrap for styling
-* Completely planned out - before each section you should be making new cards before you code.  You should have wireframes and an ERD
+## Features
+- delete functionality
+- edit functionality for pins 
+- navigation for guidance
+- authentication for login purposes
+- See pins associated with a specific board
 
-## HW Parts
+## Helpful links
+- Netlify: https://rc-pinterest.netlify.app/
+- ERD: https://dbdiagram.io/d/60401512fcdcb6230b2277dc
 
-### Part 1: ERDs and Authentication
-* Create an ERD for pinterest (do this in studygroup)
-* Clone this repo
-* Create a setup branch
-* Do all the stuff needed when setting up the project. Reference the webpack instructions if needed. These include making the updates to the `.env` file
-  * Create a new firebase project, database, and enable google authentication, etc.
-* Create an authentication branch and add a navbar with logout button, and place the google login button somewhere for you to test
-  * **Note: There are components that you can use to get started and style later. We just want you to get your auth setup by yourself.**
-* When your user is **logged out** they should see the navbar with only a brand.  And an h1 on the page that says PINTEREST (make a `home` component for this)
-* When your user is logged in they should see a navbar with a brand and a logout button and an H1 on the page that says Boards (make a `boards` component for this)
+## Screenshots 
+![Screen Shot 2021-03-13 at 8 59 24 AM](https://user-images.githubusercontent.com/76854545/111034339-c1a72d00-83da-11eb-96e1-d50481c8d07a.png)
+![Screen Shot 2021-03-13 at 8 59 34 AM](https://user-images.githubusercontent.com/76854545/111034352-cd92ef00-83da-11eb-99e7-d6b66a246701.png)
+![Screen Shot 2021-03-13 at 9 00 19 AM](https://user-images.githubusercontent.com/76854545/111034356-d1bf0c80-83da-11eb-92ec-5aba1ce3e207.png)
+![Screen Shot 2021-03-13 at 9 00 05 AM](https://user-images.githubusercontent.com/76854545/111034365-d7b4ed80-83da-11eb-9800-c11d4bd0e750.png)
 
-### Part 2: READ
-#### Setup
-* Create some json data
-* Import that data into firebase
 
-#### User Stories
-* As a user, when I am logged in and the page loads, I should see all the boards that belong to me.
-
-* As a user, when I click on one of my boards, I should see a single board view that shows all pins for that board.
-
-* As a user, when I am on the single board view, there should be some way to go back to all my boards.
-
-### Part 3: DELETE
-* As a user, I should be able to delete a pin from one of my boards.
-
-* As a user, I should be able to delete one of my boards.
-
-* As a user, when I delete one of my boards all pins that were on that board should be deleted as well.
-
-### Part 4: CREATE
-* As a user, I should be able to create a new pin.
-
-* As a user, I should be able to create a new board.
-
-### Part 5: UPDATE
-* As a user, I should be able to change which board a pin belongs to.
-
-### Part 6: Deploy and Readme
-* As a user I should be able to use your app on the internet - it should be deployed using Netlify.
-
-* As a developer, I want to see an amazing README for this project.
+## Contributors
+Rob Cole https://github.com/robertncole1
