@@ -64,7 +64,7 @@ const domEvents = (uid) => {
       createBoard(boardObject, uid).then((boardArray) => showBoards(boardArray));
     }
 
-    // CLICK EVENT FOR SHOWING MODAL FORM FOR ADDING A BOOK
+    // CLICK EVENT FOR SHOWING MODAL FORM FOR ADDING A PIN
     if (e.target.id.includes('edit-pin-btn')) {
       const firebaseKey = e.target.id.split('--')[1];
       formModal('Edit Pin');
