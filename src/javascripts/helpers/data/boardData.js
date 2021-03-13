@@ -30,7 +30,7 @@ const createBoard = (boardObject, uid) => new Promise((resolve, reject) => {
     }).catch((error) => reject(error));
 });
 
-// GET SINGLE PIN
+// GET SINGLE BOARD
 const getSingleBoard = (boardId) => new Promise((resolve, reject) => {
   axios.get(`${dbUrl}/boards/${boardId}.json`)
     .then((response) => resolve(response.data))
